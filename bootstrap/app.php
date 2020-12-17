@@ -24,9 +24,10 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->register(\UKFast\HealthCheck\HealthCheckServiceProvider::class);
-// $app->withFacades();
 
-// $app->withEloquent();
+$app->withFacades();
+
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
